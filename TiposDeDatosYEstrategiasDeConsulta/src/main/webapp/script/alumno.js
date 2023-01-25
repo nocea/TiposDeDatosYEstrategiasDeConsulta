@@ -8,4 +8,7 @@ function ejemploAlumno(){
 	document.write(typeof (AlumnoUno));
 	document.write(AlumnoUno instanceof Object);
 	document.write(AlumnoUno instanceof alumno);
+	document.write(AlumnoUno.nombre);
+	document.write(AlumnoUno.apellidos);
+	document.write(AlumnoUno.edad);
 }

@@ -1,11 +1,11 @@
-function objeto(){
-	var alumno=new Object();
-	alumno.nombre="Mario"
-	alumno.apellidos="Nocea Cabrera"
-	alumno.edad=19;
-	document.write(alumno instanceof Object);
-	document.write(typeof alumno);
-	document.write(alumno.nombre);
-	document.write(alumno.apellidos);
-	document.write(alumno.edad);
+function ejemploAlumno(){
+	function alumno(nombre,apellidos,edad){
+		this.nombre=nombre;
+		this.apellidos=apellidos;
+		this.edad=edad;
 	}
+	var AlumnoUno=new alumno('Mario','Nocea',19);
+	document.write(typeof (AlumnoUno));
+	document.write(AlumnoUno instanceof Object);
+	document.write(AlumnoUno instanceof alumno);
+}
